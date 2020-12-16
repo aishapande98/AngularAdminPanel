@@ -1,6 +1,6 @@
 /*Instructions to download the project*/
 
-1. Download this project
+1. Download the project angularapp1 in the local.
 2. Open Visual Studio Code
 3. Click on file and Open Folder
 4. Open the downloaded folder
