@@ -1,0 +1,65 @@
+<div class="container">
+    <h1>Roles</h1>
+<div class="form-group">
+    <input type="text" class="form-control" [(ngModel)]="name" placeholder="Name" >
+</div>
+<div class="form-group">
+    <input type="text" class="form-control" [(ngModel)]="description" placeholder="Description" >
+</div>
+
+<!--<div class="form-group">
+    <button class="btn btn primary" (click)="CreateEmployee()" [disabled]="!name || !email || !role || !organization">Add new employee</button>
+    <button class="btn btn primary" (click)="ListEmployees()">List Employees</button>
+</div>
+<div class="form-group" [hidden]="!show">
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Email</th>
+            <th>Role</th>
+            <th>Organization</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let emp of employee">
+            <td>{{emp.name}}</td>
+            <td>{{ emp.email }}</td>
+            <td>{{ emp.role }} </td>
+            <td>{{ emp.organization }} </td>
+            <span><button class="btn btn danger" (click)="DeleteEmployee(emp.id)">Delete Employee</button></span>           
+          </tr>
+          
+        </tbody>
+      </table>
+      
+</div>-->
+<button class="btn btn-success" (click)="AddRole()">Add new Role</button>
+    <button class="btn btn-primary" (click)="ListRoles()">List Roles</button>
+
+    <div class="form-group" [hidden]="!show">
+    <table class="table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Description</th>
+            
+          </tr>
+        </thead>
+        <tbody>
+          <tr *ngFor="let role of Role">
+            <td>{{role.name}}</td>
+            <td>{{ role.description }}</td>
+            <span><button class="btn btn-danger" (click)="DeleteRoles(role.id)">Delete Role</button></span>           
+          </tr>
+          
+        </tbody>
+      </table>
+      
+</div>
+
+
+</div>
+<div class="container">
+  <router-outlet></router-outlet>
+</div>
