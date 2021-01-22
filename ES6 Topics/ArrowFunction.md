@@ -17,8 +17,14 @@
      let multiply = (x,y) => 
      x * y;
      
-   3. Difference between arrow function and regular function,
+  3. Difference between arrow function and regular function,
    
       1.We cant use arrow function as a function constructor,when try to create object using new keyword from an arrow function,will get an error.
+      
+  4. When we should not use arrow function
+	    
+		An arrow function doesn't have its own this method and arguments object.There we should not use it as an event handler,a method of an object, a method of a class, or
+		a prototype method or when you have a function that uses the arguments object.
+       
       
    
