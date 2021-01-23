@@ -48,7 +48,17 @@ What is AJAX
          * xhttp.open("GET", "ajax_info.txt", true);
          * xhttp.send();
          * }
-    * </script>
+     </script>
+     
+### XMLhttpRequest object properties
+  
+   * onreadystatechange: Defines a function that to be called on state change.
+   * readyState: It holds the status of XMLhttpRequest
+           * 0: Request not initialized
+           * 1: Server connection established
+           * 2: Request recevied
+           * 3: Processing request
+           * 4: Response is ready
     
 
   
