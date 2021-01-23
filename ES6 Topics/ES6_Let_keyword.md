@@ -1,15 +1,17 @@
-1.  Understand ES6 Let keyword more better.
-    Consider below code,
+Understand ES6 Let keyword more better
+-----------------------------------
+-----------------------------------
+#### Consider below code,
  
-     1. Lets consider below example,
+   * 1. Lets consider below example,
     for (var i = 0; i < 5; i++) {
         setTimeout(function () {
         console.log(i);
       }, 1000);
       
-      Explanation: Intention of this code is to print numbers from 0 to 4 every second.However, it just print number 5 five times.The reason is that after five iterations,the 
-      value of i becomes 5 and the five instances of callback function are passed to setTimeout function as the final value of 5.
-      We can fix this issue using ES5 IIFFE function,
+     *  Explanation: Intention of this code is to print numbers from 0 to 4 every second.However, it just print number 5 five times.The reason is that after five iterations,the 
+        value of i becomes 5 and the five instances of callback function are passed to setTimeout function as the final value of 5.
+        We can fix this issue using ES5 IIFFE function,
        
        for (var i = 0; i < 5; i++) {
        (function (j) {
