@@ -35,7 +35,7 @@ What is AJAX
   
    * onreadystatechange: Defines a function that to be called on state change.
    * readyState: It holds the status of XMLhttpRequest.
-                * 0: Request not initialized.
+        * 0: Request not initialized.
                 * 1: Server connection established.
            *  0: Request not initialized.
            *  1: Server connection established.
