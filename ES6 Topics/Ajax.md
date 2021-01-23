@@ -19,6 +19,38 @@ What is AJAX
    * The response is read by a Javascript.
    * Proper action is taken by Javascript.
     
+ ### XMLhttpRequest Object:
+ 
+   * All modern browsers like (chrome,mozilla,IE 7,Edge,Safari) have a built in XMLhttpRequest object.
+   * Below is the syntax to create XMLhttpRequest object
+       * variable =new XMLhttpRequest();
+       
+  ### ActiveXObject:
+   
+   * Old versions of IE i.e IE 5,6 uses ActiveXObject to send request to a server instead of XMLhttpRequest Object.
+   * To hadle this browsers check if it supports XMLhtppRequest object else use ActiveXObject.
+   * Below is the sample code,
+       <script>
+         function loadDoc(){
+           var xhttp:
+           if(window.XMLhttpRequest){
+           //code for moderns browsers 
+            xhttp=new XMLhttpRequest();
+           }
+           else{
+            xhttp=new ActiveXObject();
+            }
+            xhttp.onreadystatechange = function() {
+                if (this.readyState == 4 && this.status == 200) {
+                document.getElementById("demo").innerHTML = this.responseText;
+               }
+            };
+         xhttp.open("GET", "ajax_info.txt", true);
+         xhttp.send();
+         }
+    </script>
+    
+      </script> 
   
   
   
