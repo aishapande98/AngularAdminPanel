@@ -1,4 +1,5 @@
-What is AJAX?
+What is AJAX
+===================================
 
  * AJAX is Asynchronous Javascript and XML.
  * AJAX is not a programming language.
