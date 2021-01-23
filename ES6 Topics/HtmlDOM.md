@@ -10,3 +10,13 @@ What is DOM
 
 * (Method) document.getElementById: Its a most common way to access HTML elemennt using Javascript.
 * (Property) InnerHTML: It is most useful to get and replace content of HTML elements.
+
+## HTML DOM Document
+
+* The HTML DOM object is the owner of all the objects in your web page.
+* If you want to access any element in HTML page,you always starts with accessing document object.
+* Below are some methods that are used to add or delete elements from the DOM
+   * document.createElement(): It creates an HTML element.
+   * document.removechild(): It removes an HTML element.
+   * document.appendchild(): It adds an HTML element.
+   * document.replaceChild(new,old): It replaces an HTML element.
