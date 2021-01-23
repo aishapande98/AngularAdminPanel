@@ -42,11 +42,11 @@ What is Promise?
    Now, you will see the Pending state till 3 seconds in the console as we set the value of completed to true.
     
    Once the Promise object is created its in Pending state until it is resolved.To schedule a callback once the promise is resolved,use below methods of Promise object.
-    1. then() method:
+   * then() method:
         The then() method is used to schedule a callback to be executed once the Promise is suceessfully resolved.
         
-   2. catch() method:
+   * catch() method:
         The catch() method is uses to schedule a callbak when the Promise is rejected.
         
-   3. finally() method:
+   * finally() method:
         Sometimes you might want to execute same piece of code when the Promise either rejected or fulfilled, at that time you could use finally() method.
