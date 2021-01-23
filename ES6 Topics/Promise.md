@@ -1,4 +1,6 @@
-1. What is Promise?
+What is Promise?
+----------------------------------
+----------------------------------
 
   In Javascript Promise is an object which you hope to return in future but not now.
   Lets consider below examplle to understand the Promise more better,
