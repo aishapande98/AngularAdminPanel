@@ -40,6 +40,14 @@ What is AJAX
         * 2: Request recevied.
         * 3: Processing request.
         * 4: Response is ready.
+        
+ ### Send a request to a server
+ 
+   *  To send a request to a server use a Open() and send() method:
+        * Open(method,URL,async): It specifies the type of request
+              * method: Get or Post
+              * URL: file location
+              * async: Server requests to be send asynchronously.
     
 
   
