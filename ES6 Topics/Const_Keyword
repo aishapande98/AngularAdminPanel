@@ -1,0 +1,6 @@
+*** Const keyword
+
+ * If we declare variable using const keyword then we can change value of that variable. 
+ * For example,  
+ * Const Age -20;
+ * Age=20;
