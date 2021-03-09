@@ -52,7 +52,7 @@ Understand ES6 Let keyword more better
             It seems that Javascript doesn't hoist let keyword however, it does.In fact, Javascript engine hoists let keyword to the top of page however it does not initialize the
             variable.
             
-        4. Temporal death zone:    
+   4. Temporal death zone:    
             
             Variable declared with Let keyword is called Temporal Death Zone, it starts when the block starts and ends when the variable is accessed.
             Consider below example,
@@ -71,4 +71,10 @@ Understand ES6 Let keyword more better
             
             In this example, TDZ starts with the opening curly brace and ends with let foo=10;
             When we try to access foo variable console.log(foo)(Line no 60), it will throw error. So, TDZ prevents us from accidently referencing variable before its declarartion.
+            
+   5. When to use Let keyword:
+          1. If we need to reassign varibale value.(For example: Let age=32; age=30;)
+          2. When we want to declare variables at the top of the file and assign later.
+
+                 
       
